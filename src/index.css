@@ -1,0 +1,111 @@
+/* Main container for the todo app */
+.todo-app-container {
+  max-width: 420px;
+  margin: 48px auto;
+  padding: 32px 28px 28px 28px;
+  background: #f9fafb;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px #0002;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.2s;
+}
+.todo-app-container:hover {
+  box-shadow: 0 8px 32px #0003;
+}
+
+.todo-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+/* TodoInput styles */
+.todo-input-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.todo-input-field {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+}
+.todo-input-field:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+}
+.todo-input-btn {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #3182ce 60%, #63b3ed 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.todo-input-btn:hover {
+  background: linear-gradient(90deg, #2563eb 60%, #4299e1 100%);
+}
+
+/* TodoList styles */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+.todo-list-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px #0001;
+  padding: 8px 10px;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.todo-list-item:hover {
+  box-shadow: 0 2px 8px #0002;
+  border: 1.5px solid #3182ce;
+}
+.todo-list-text {
+  flex: 1;
+  font-size: 1.05rem;
+  color: #2d3748;
+}
+.todo-list-edit-input {
+  flex: 1;
+  padding: 7px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.todo-list-edit-input:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+}
+.todo-list-item button {
+  background: #edf2f7;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 14px;
+  font-size: 0.98rem;
+  font-weight: 500;
+  color: #2d3748;
+  cursor: pointer;
+  margin-left: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+.todo-list-item button:hover {
+  background: #3182ce;
+  color: #fff;
+}
